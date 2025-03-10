@@ -1,0 +1,34 @@
+{
+  "WFWorkflowName": "App-Timer",
+  "WFWorkflowIcon": {
+    "WFWorkflowIconStartColor": 4282601983,
+    "WFWorkflowIconGlyphNumber": 61502
+  },
+  "WFWorkflowInputContentItemClasses": [
+    "WFAppStoreAppContentItem"
+  ],
+  "WFWorkflowActions": [
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.wait",
+      "WFWorkflowActionParameters": {
+        "WFDelayTime": 180
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.exitapp",
+      "WFWorkflowActionParameters": {}
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.openapp",
+      "WFWorkflowActionParameters": {
+        "WFAppIdentifier": "com.entwicklername.upgate",
+        "WFAppName": "UpGate"
+      }
+    }
+  ],
+  "WFWorkflowTypes": ["NCWidget", "WatchKit", "Automation"],
+  "WFWorkflowClientVersion": "1050.12",
+  "WFWorkflowClientRelease": "3.0",
+  "WFWorkflowMinimumClientVersion": 900,
+  "WFWorkflowMinimumClientVersionString": "3.0"
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpGate Shortcuts</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .button:hover {
+            background-color: #2980b9;
+        }
+        code {
+            background-color: #f8f8f8;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        pre {
+            background-color: #f8f8f8;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>UpGate Shortcuts</h1>
+    
+    <p>This repository contains shortcut files for the UpGate app, which help you manage your app usage time.</p>
+    
+    <h2>Available Shortcuts</h2>
+    
+    <h3>App Timer</h3>
+    <p>A shortcut that waits for a specified time, then returns to the home screen and opens the UpGate app.</p>
+    
+    <a href="shortcuts://import-shortcut?url=https://avartus.github.io/upgate-shortcuts/app-timer.shortcut" class="button">Import App Timer Shortcut</a>
+    
+    <p>If the button doesn't work, you can manually download the <a href="app-timer.shortcut">shortcut file</a> and import it into the Shortcuts app.</p>
+    
+    <h2>How to Use</h2>
+    
+    <p>After importing the shortcut, you need to create an automation:</p>
+    
+    <ol>
+        <li>Open the Shortcuts app</li>
+        <li>Go to the "Automation" tab</li>
+        <li>Tap "+" to create a new automation</li>
+        <li>Choose "App" as the trigger</li>
+        <li>Select the app you want to monitor (e.g., Instagram)</li>
+        <li>Choose "Is Opened"</li>
+        <li>Tap "Next"</li>
+        <li>Tap "Add Action"</li>
+        <li>Search for "Run Shortcut" and select it</li>
+        <li>Choose the imported "App-Timer" shortcut</li>
+        <li>Tap "Next"</li>
+        <li>Turn OFF "Ask Before Running"</li>
+        <li>Tap "Done" to save the automation</li>
+    </ol>
+    
+    <h2>Technical Details</h2>
+    
+    <p>The shortcut performs the following actions:</p>
+    
+    <ol>
+        <li>Waits for a specified time (3 minutes by default)</li>
+        <li>Returns to the Home Screen</li>
+        <li>Opens the UpGate app</li>
+    </ol>
+    
+    <p>For more information, see the <a href="README.md">README</a>.</p>
+</body>
+</html>
